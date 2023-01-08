@@ -60,11 +60,11 @@ function checkNUmber() {
         sign.textContent = '✔️'
         signMobile.textContent = '✔️'
         if (scoreValue >= 6) {
-            titleMobile.innerHTML = '<h1> Swerte </h1>'
+            title.innerHTML = '<h1> Swerte </h1>'
             head.style.backgroundColor = '#00FFF6'
             headMobile.style.backgroundColor = '#00FFF6'
         }else if (scoreValue <= 5  ){
-            titleMobile.innerHTML = '<h1> Malas </h1>'
+            title.innerHTML = '<h1> Malas </h1>'
             head.style.backgroundColor = '#FF1E1E'
             headMobile.style.backgroundColor = '#FF1E1E'
         }
@@ -117,7 +117,7 @@ function resetGame(params) {
     score.textContent = scoreValue;
     userInput.value = '';
     checkButton.disabled = false
-    title.innerHTML = '<h1>Ari bi, Swerte ba ka?! 👻</h1>'
+    title.innerHTML = '<h1>Ari bi, Swerte ba ka?! 👻 </h1>'
     head.style.backgroundColor = '#222'
     headMobile.style.backgroundColor = '#222'
     sign.textContent = '?'
@@ -211,7 +211,7 @@ function resetGameMobile(params) {
     scoreMobile.textContent = scoreValueMobile;
     userInputMobile.value = '';
     checkMobile.disabled = false
-    title.innerHTML = '<h1>Ari bi, Swerte ba ka?! 👻</h1>'
+    titleMobile.innerHTML = '<h1 class="title fs-4" id="idtitleMobile">Ari bi, Swerte ba ka?! 👻 </h1>'
     head.style.backgroundColor = '#222'
     headMobile.style.backgroundColor = '#222'
     sign.textContent = '?'
